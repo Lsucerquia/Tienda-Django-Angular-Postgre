@@ -1,0 +1,73 @@
+<div class="about-container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <h1>Sobre Nosotros</h1>
+      <p class="mission-statement">
+        Creemos en darle una segunda oportunidad a la moda y los artículos del hogar, 
+        transformando la forma en que consumimos para cuidar nuestro planeta.
+      </p>
+      <img src="medio-ambiente.jpg" alt="Imagen medio-ambiente" class="hero-image" />
+    </section>
+  
+    <!-- Impacto Ambiental -->
+    <section class="environmental-impact">
+        <h2>Impacto Ambiental</h2>
+        <div class="impact-grid">
+          <div class="impact-card" *ngFor="let impacto of impactosAmbientales">
+          <img [src]="impacto.imagen" [alt]="impacto.titulo" class="impact-image" />
+            <i class="fas {{impacto.icono}}"></i>
+            <h3>{{impacto.titulo}}</h3>
+            <p>{{impacto.descripcion}}</p>
+          </div>
+        </div>
+      </section>
+  
+    <!-- Categorías -->
+    <section class="categories">
+      <h2>Lo Que Encontrarás</h2>
+      <div class="category-grid">
+        <div class="category-card" *ngFor="let categoria of categorias">
+          <i class="fas {{categoria.icono}}"></i>
+          <h3>{{categoria.titulo}}</h3>
+          <ul>
+            <li *ngFor="let item of categoria.items">{{item}}</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Proceso de Selección -->
+    <section class="process">
+      <h2>Nuestro Proceso</h2>
+      <div class="process-timeline">
+        <div class="process-step" *ngFor="let proceso of procesosSeleccion">
+          <i class="fas {{proceso.icono}}"></i>
+          <h3>{{proceso.titulo}}</h3>
+          <p>{{proceso.descripcion}}</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Contacto -->
+    <section class="contact">
+      <h2>Encuéntranos</h2>
+      <div class="contact-info">
+        <div class="contact-details">
+          <p><i class="fas fa-map-marker-alt"></i> {{contactInfo.direccion}}</p>
+          <p><i class="fas fa-phone"></i> {{contactInfo.telefono}}</p>
+          <p><i class="fas fa-envelope"></i> {{contactInfo.email}}</p>
+        </div>
+        <div class="business-hours">
+          <h3>Horarios</h3>
+          <p>Lunes a Viernes: {{contactInfo.horarios.lunes_viernes}}</p>
+          <p>Sábado: {{contactInfo.horarios.sabado}}</p>
+          <p>Domingo: {{contactInfo.horarios.domingo}}</p>
+        </div>
+        <div class="social-media">
+          <h3>Síguenos</h3>
+          <p><i class="fab fa-instagram"></i> {{contactInfo.redes.instagram}}</p>
+          <p><i class="fab fa-facebook"></i> {{contactInfo.redes.facebook}}</p>
+        </div>
+      </div>
+    </section>
+  </div>

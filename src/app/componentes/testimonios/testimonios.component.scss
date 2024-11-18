@@ -1,0 +1,41 @@
+.testimonios-container {
+    display: flex;
+    flex-wrap: wrap;  // Permite que las tarjetas se ajusten si no caben
+    gap: 20px;  // Espacio entre tarjetas
+    justify-content: center;  // Alinea las tarjetas al centro
+    margin-top: 10rem;  // Espacio adicional desde el navbar, ajustable
+    width: 100%;  // Asegura que el contenedor ocupe todo el ancho disponible
+  }
+  
+  .testimonios-container h2 {
+    text-align: center;  // Centra el título
+    color: #003366;  // Azul oscuro
+    margin-bottom: 2rem;  // Espacio debajo del título
+    width: 100%;  // Asegura que el h2 ocupe todo el ancho del contenedor
+    display: block;  // Asegura que el h2 sea un bloque para que se alinee correctamente
+  }
+  
+  .testimonio {
+    background-color: #A3C8FF;  // Azul claro para el fondo de las tarjetas
+    border-radius: 8px;
+    padding: 20px;  // Aumenté el padding para dar más espacio interno
+    width: 250px;  // Tamaño de las tarjetas
+    height: 220px;  // Altura fija para las tarjetas
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  // Sombras suaves
+    display: flex;
+    flex-direction: column;  // Asegura que los elementos dentro estén en columna
+    justify-content: space-between;  // Asegura que el contenido se distribuya bien
+    align-items: center;  // Centra el contenido de cada tarjeta
+  }
+  
+  .testimonio-quote {
+    font-size: 1rem;  // Texto un poco más pequeño
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonio-author {
+    font-size: 0.9rem;  // Texto un poco más pequeño para el autor
+    font-weight: bold;
+    text-align: right;
+  }

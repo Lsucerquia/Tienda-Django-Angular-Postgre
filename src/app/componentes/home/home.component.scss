@@ -1,0 +1,106 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: 80px; /* Espacio para estar debajo del navbar */
+  text-align: center;
+  min-height: 100vh; /* Asegura que el contenedor ocupe el 100% de la altura de la ventana */
+  justify-content: flex-start;
+}
+
+// Estilo para el h1
+h1 {
+  color: #003366; /* Azul oscuro */
+  margin-bottom: 5mm; /* Separación de 5mm de p */
+}
+
+// Estilo para el h2 (ahora en gris oscuro)
+h3 {
+  color: #333333; /* Gris oscuro */
+  margin-top: 0; /* Ajuste del margen superior */
+}
+
+h2 {
+  color: #333333; /* Gris oscuro */
+  margin-top: 0; /* Ajuste del margen superior */
+}
+
+// Estilo para el p (ahora en blanco)
+p {
+  color: #ffffff; /* Blanco */
+  margin-bottom: 10px; /* Espacio entre el párrafo y los botones */
+  margin-top: 0; /* Ajustar el margen superior si es necesario */
+}
+
+// Contenedor para los botones de categoría
+.button-container {
+  display: flex;
+  gap: 20px; /* Espacio entre los botones */
+  justify-content: center; /* Alinea los botones en el centro */
+  margin-top: 10px; /* Subir los botones */
+}
+
+// Estilos para los botones
+.category-button {
+  background-color: #007bff; /* Fondo azul */
+  color: white; /* Texto blanco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+  }
+}
+
+// Imagen Principal y Mensaje
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

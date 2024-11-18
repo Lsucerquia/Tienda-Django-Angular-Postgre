@@ -1,0 +1,31 @@
+<nav class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__logo">
+        <a routerLink="/home">
+          <img src="logo.jpg" alt="MiLogo" class="navbar__logo-img" />
+        </a>
+      </div>
+      
+      <div class="navbar__menu">
+        <ul class="navbar__list">
+          <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+          <li><a routerLink="/acerca-de" routerLinkActive="active">Acerca de</a></li>
+          <li><a routerLink="/testimonios" routerLinkActive="active">Testimonios</a></li>
+          <li class="whatsapp-item">
+            <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-link">
+              <i class="fab fa-whatsapp"></i> Contacto vía WhatsApp
+            </a>
+          </li>
+
+          </ul>
+          
+         
+
+      </div>
+
+      <div class="navbar__auth">
+        <a routerLink="/registro" class="navbar__auth-btn register">Registro</a>
+        <a routerLink="/login" class="navbar__auth-btn login">Login</a>
+      </div>
+    </div>
+  </nav>

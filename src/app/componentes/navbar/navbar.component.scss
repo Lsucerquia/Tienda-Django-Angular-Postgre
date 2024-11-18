@@ -1,0 +1,132 @@
+.navbar {
+  width: 100%;
+  height: 100px; // Ajustar la altura de la barra de navegación
+  background-color: #d3d3d3; // Gris claro
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  &__container {
+    max-width: 1400px; // Ancho máximo de la barra de navegación
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    a {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+    }
+    
+    // Estilo para la imagen del logo
+    .navbar__logo-img {
+      width: 80px;  // Ajusta el tamaño del logo (por ejemplo, 80px)
+      height: auto; // Mantiene la proporción original de la imagen
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      a {
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #007bff;
+        }
+
+        &.active {
+          color: #007bff;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  // Estilos para el enlace de WhatsApp
+  .whatsapp-link {
+    font-size: 16px;
+    color: #25D366; // Color verde de WhatsApp
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #128C7E; // Color más oscuro cuando se pasa el cursor
+    }
+
+    i {
+      margin-right: 8px;  // Espacio entre el ícono y el texto
+      font-size: 18px; // Tamaño del ícono
+    }
+  }
+
+
+
+  &__auth {
+    display: flex;
+    gap: 15px;
+
+    &-btn {
+      padding: 8px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+
+      &.register {
+        background-color: transparent;
+        color: #007bff;
+        border: 1px solid #007bff;
+
+        &:hover {
+          background-color: #007bff;
+          color: white;
+        }
+      }
+
+      &.login {
+        background-color: #007bff;
+        color: white;
+        border: 1px solid #007bff;
+
+        &:hover {
+          background-color: #0056b3;
+          border-color: #0056b3;
+        }
+      }
+    }
+  }
+
+  // Estilo para el enlace de WhatsApp
+  .whatsapp-link {
+    font-size: 16px;
+    color: #25D366 !important; // Fuerza el color verde de WhatsApp
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: #128C7E !important; // Color verde más oscuro al pasar el mouse
+    }
+
+    i {
+      margin-right: 8px; // Espacio entre el ícono y el texto
+    }
+  }
+}

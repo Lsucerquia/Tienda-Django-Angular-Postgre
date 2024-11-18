@@ -1,0 +1,101 @@
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+  
+      input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+        outline: none;
+  
+        &:focus {
+          border-color: #007bff;
+          box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+        }
+  
+        &::placeholder {
+          color: #999;
+        }
+      }
+  
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+  
+        &:active {
+          transform: translateY(1px);
+        }
+      }
+    }
+  
+    // Efectos de hover y focus para accesibilidad
+    input:hover {
+      border-color: #b3b3b3;
+    }
+  
+    // Media queries para responsividad
+    @media (max-width: 480px) {
+      margin: 20px;
+      padding: 1.5rem;
+  
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+  
+      form {
+        gap: 1rem;
+  
+        input, button {
+          padding: 10px;
+        }
+      }
+    }
+  
+    // Animación de aparición
+    animation: fadeIn 0.5s ease;
+  }
+  
+  // Keyframes para la animación de aparición
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,11 @@
+<div class="productos-container">
+    <h1>Lista de Productos</h1>
+    <!-- Mostrar cada producto con un ciclo *ngFor -->
+    <div class="producto-card" *ngFor="let producto of productos">
+      <h2>{{ producto.nombre }}</h2>
+      <p>{{ producto.descripcion }}</p>
+      <p><strong>Precio:</strong> {{ producto.precio | currency }}</p>
+      <p><strong>Categoría:</strong> {{ producto.categoria }}</p>
+      <img *ngIf="producto.imagen" [src]="producto.imagen" alt="Imagen del producto">
+    </div>
+  </div>

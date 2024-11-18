@@ -1,0 +1,36 @@
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 5rem;
+}
+
+h1 {
+  color: #003366; // Azul oscuro
+  text-align: center; // Centra el texto horizontalmente
+  margin-bottom: 20px; // Espacio debajo del h1
+  width: 100%; // Asegura que el h1 ocupe todo el ancho disponible
+}
+
+h2 {
+  color: #003366; // Azul oscuro para h2
+}
+
+.producto-card {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background-color: #A3C8FF;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  p {
+    font-weight: bold; // Texto en negrita
+    color: #333333; // Negro oscuro para los párrafos
+  }
+}
